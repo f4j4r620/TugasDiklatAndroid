@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        />
+    <item android:id="@+id/nav_calculator"
+        android:title="Calculator"
+        android:icon="@drawable/ic_calc"
+        />
+    <item android:id="@+id/nav_suhu"
+        android:title="Suhu"
+        android:icon="@drawable/ic_suhu"/>
+
+    <item android:id="@+id/nav_berat"
+        android:title="Berat"
+        android:icon="@drawable/ic_berat"
+        />
+</menu>

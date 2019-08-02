@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeratActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BERAT BADAN IDEAL"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_purple"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"/>
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:lines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asal Sekolah"/>
+        <Spinner
+            android:id="@+id/listSekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sekolah"
+            android:padding="15dp">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Umur"/>
+
+        <EditText
+            android:id="@+id/edt_lenght"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:lines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tinggi"/>
+
+        <EditText
+            android:id="@+id/edt_width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:lines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berat"/>
+
+        <EditText
+            android:id="@+id/edt_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:lines="1"/>
+
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:text="Hitung"
+            android:textColor="#FAF3F3" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hasil"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuhuActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Konversi Suhu"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_purple"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Suhu Awal" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text=":" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:id="@+id/listItem"
+                android:entries="@array/suhu"
+                android:padding="15dp"
+                tools:ignore="DuplicateIds">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Suhu Tujuan" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text=":" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:id="@+id/listItem1"
+                android:entries="@array/suhu"
+                android:padding="15dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Inputan" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text=":" />
+            <EditText
+                android:id="@+id/inputan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0.55"
+                android:inputType="numberDecimal"
+                android:lines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Hasil" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text=":" />
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:layout_marginBottom="30dp"
+                android:lines="1" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:text="Hitung Konversi" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu"
+        />
+
+</android.support.constraint.ConstraintLayout>

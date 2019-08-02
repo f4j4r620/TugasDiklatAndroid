@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LatihanMenu</string>
+    <string-array name="sekolah">
+        <item>SMA Negeri 1 Balikpapan</item>
+        <item>SMA Negeri 1 Yogyakarta</item>
+        <item>SMA Negeri 1 Samarinda</item>
+    </string-array>
+
+    <string-array name="suhu">
+        <item>Celcius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    
+</resources>
